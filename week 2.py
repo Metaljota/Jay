@@ -98,7 +98,10 @@
 # myorder = "I want {} pieces of item number {} for {:.2f} dollars."
 # print(myorder.format(quantity, itemno, price))
 
+
+
 #                                          CLASS 1 JUNE 2022
+
 
 # quantity = 3
 # itemno = 4
@@ -203,31 +206,75 @@
 # If option 3 is chosen the program should exit.
 # If any other input is entered the menu simply repeats
 
-def add():
-    num1 = float(input("enter first number: "))
-    num2 = float(input("enter first number: "))
-    print(num1 + num2)
+# def add():
+#     num1 = float(input("enter first number: "))
+#     num2 = float(input("enter first number: "))
+#     print(num1 + num2)
 
-print("\n This program do math")
-choice = ''
-while choice != 'q':
-    print("\n[1] Enter 1 to add numbers: ")
-    print("\n[2] Enter 2 to subtract numbers: ")
-    print("\nEnter q to quit")
-    choice = input("\nMake your choice: ")
+# print("\n This program do math")
+# choice = ''
+# while choice != 'q':
+#     print("\n[1] Enter 1 to add numbers: ")
+#     print("\n[2] Enter 2 to subtract numbers: ")
+#     print("\nEnter q to quit")
+#     choice = input("\nMake your choice: ")
 
-    if choice == '1':
-        add()
+#     if choice == '1':
+#         add()
 
-    elif choice == '2':
-        num1 = int(input("enter the first number: "))
-        num2 = int(input("enter the second number: "))
-        print(num1 - num2)
+#     elif choice == '2':
+#         num1 = int(input("enter the first number: "))
+#         num2 = int(input("enter the second number: "))
+#         print(num1 - num2)
 
-    else:
-        print("\nInvalid option, please try again. \n")
+#     else:
+#         print("\nInvalid option, please try again. \n")
 
-print("program exit.")
+# print("program exit.")
+#--------------------------------------
+
+#                             CLASS 3 JUNE 2022
+
+#OPEN A FILE with "r" to read it
+# myFile = open("myFile.txt", "r") 
+# print(myFile.read())  		
+# myFile.close()
+#----------------------
+#OPEN A FILE and wirte on it with "a"
+# myFile = open("myFile.txt", "a") #open in append mode
+# myFile.write(input("write here: "))
+# myFile.close()
+#"w" - Write - Opens a file for writing, creates the file if it does not exist
+#"x" - Create - Creates the specified file, returns an error if the file exists
+#----------------------
+#READING one line
+# myFile = open("myFile.txt", "r") 
+# print(myFile.readline())  		
+# myFile.close()
+#--------------------------
+#READING especific line
+# open the file 
+# myFile = open('myFile.txt')
+# # read the content of the file opened
+# content = myFile.readlines()
+# # read 2nd line from the file
+# print(content[1])
+# # print first 3 lines of file
+# print(content[0:3])
+#-----------------------
+name = "Eric"
+age = 74
+print(f"Hello, {name}. You are {age} years old.")
+
+print(f"{'Left Aligned Text' : <20} {'Centre Aligned Text' : ^30} {'Right Aligned Text' : >20}")
+
+
+
+
+
+
+
+
 
 
 
