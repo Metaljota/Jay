@@ -262,11 +262,25 @@
 # # print first 3 lines of file
 # print(content[0:3])
 #-----------------------
-name = "Eric"
-age = 74
-print(f"Hello, {name}. You are {age} years old.")
+#ARRANGE the text
+# name = "Eric"
+# age = 74
+# print(f"Hello, {name}. You are {age} years old.")
+# print(f"{'Left Aligned Text' : <20} {'Centre Aligned Text' : ^30} {'Right Aligned Text' : >20}")
+#----------------------------
 
-print(f"{'Left Aligned Text' : <20} {'Centre Aligned Text' : ^30} {'Right Aligned Text' : >20}")
+# get side 1
+# get side 2
+# get side 3
+# display the perimeter 
+
+print("Calculate a triangle perimeter")
+a = int(input("enter side 1: "))
+b = int(input("enter side 1: "))
+c = int(input("enter side 1: "))
+total = a+b+c 
+print("the perimeter is:", total)
+
 
 
 
