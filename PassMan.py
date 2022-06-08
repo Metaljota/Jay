@@ -11,9 +11,13 @@ def write_credentials():#This function will open/create the text file and save t
     text.close()
 
 def open_credentials(): #This function will open the text file a read it
-    text = open("credentials.txt", "r")
-    print(text.read())
-    text.close() 
+    try:
+        text = open("credentials.txt", "r")
+        print(text.read())
+        text.close()
+    except:
+        print("\nThe file does not exist yet\n")
+
 
 choice = ""
 
@@ -28,7 +32,7 @@ while choice != "q":
     elif choice == "2":
         open_credentials()#this call the function to read the file
     elif choice == "q":
-        print("see you next time!")
+        print("\nsee you next time!\n")
     else:
         print("\nwrong option, please select again\n")
        
